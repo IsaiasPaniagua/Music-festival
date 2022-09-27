@@ -1,5 +1,2 @@
-$black: black;
-
-body {
-    background-color: $black;
-}
+@use "base";
+@use "layout";
