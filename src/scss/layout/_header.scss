@@ -1,0 +1,20 @@
+@use "base/variables" as v; 
+
+.header {
+    background-color: v.$Celestial;
+    
+    h1 {
+        color: v.$White;
+    }
+}
+
+.navegacion-principal {
+    a {
+        color: v.$White;
+        font-size: 2.4rem;
+
+        &:hover {
+            color: v.$Yellow;
+        }
+    }
+}
