@@ -1,20 +1,47 @@
 @use "base/variables" as v; 
+@use "base/mixins" as m;
 
 .header {
     background-color: v.$Celestial;
     
     h1 {
         color: v.$White;
+        text-align: center;
+        @include m.tablet {
+            margin: 0;
+        }
+    }
+    .contenido-header {
+        padding: 2rem;
+        @include m.tablet {
+            display: flex; // va a colocar de lado derecho nuestros enlaces
+            justify-content:space-between; // uno de lado izquierdo y otro del derecho
+            align-items: center;
+        }
     }
 }
 
 .navegacion-principal {
+    @include m.tablet {
+        display:flex; // izquierda a derecha los enlaces
+        gap: 2rem; //espacio a los enlaces
+    }
     a {
+        display: block; //para que se coloquen de arriba hacia abajo
+        text-align: center;
         color: v.$White;
         font-size: 2.4rem;
+        margin-bottom: 1rem; // para que esten separados los enlaces
+        @include m.tablet {
+            margin:0;
+        }
 
         &:hover {
             color: v.$Yellow;
         }
     }
 }
+
+// .prueba {
+//     @include m.heading(v.$Yellow, true);
+// }
