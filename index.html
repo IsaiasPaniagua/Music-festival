@@ -15,9 +15,9 @@
         <div class="contenedor contenido-header">
             <h1>Rock & EDM Festival</h1>
             <nav class="navegacion-principal">      
-                <a href="#">Line Up</a>
-                <a href="#">Galery</a>
-                <a href="#">Tickets</a>
+                <a href="#lineup">Line Up</a>
+                <a href="#galeria">Galery</a>
+                <a href="#boletos">Tickets</a>
             </nav>
         </div>
     </header>
@@ -41,7 +41,10 @@
 
     <section class="contenedor sobre-festival">
         <div class="imagen">
-            <img src="img/imagen_vocalista.jpg" alt="Imagen Vocalista Festival">
+            <picture>
+                <source srcset="build/img/imagen_vocalista.webp" type="image/webp">
+                <img src="./build/img/imagen_vocalista.jpg" alt="Imagen vocalista">
+            </picture>
         </div>
         <div class="contenido-festival">
             <h2>Rock & EDM Festival</h2>
@@ -53,6 +56,173 @@
             </p>
         </div>
     </section>
-    
+    <section id="lineup" class="lineup">        
+        <h3>Line Up</h3>
+
+        <p class="dia">Sabado 15</p>
+
+        <div class="escenarios-contenedor contenedor">
+
+            <div class="escenario rock bg-amarillo">
+                    <p class="nombre-escenario">Escenario Rock</p>
+                    
+                    <ul class="calendario">
+                        <li>
+                            24:00 | <span>Metalica</span>
+                        </li>
+                        <li>
+                            22:00 | <span>Pearl Jam</span>
+                        </li>
+                        <li>
+                            20:00 | <span>KoRn</span>
+                        </li>
+                        <li>
+                            19:00 | <span>Muse</span>
+                        </li>
+                        <li>
+                            18:00 | <span>Breaking Benjamin</span>
+                        </li>
+                        <li>
+                            17:00 | <span>30 second to Mars</span>
+                        </li>
+                    </ul>
+                </div>
+            
+
+            <div class="escenario edm bg-verde">
+                <p class="nombre-escenario">Escenario EDM</p>
+                
+                <ul class="calendario">
+                    <li>
+                        24:00 | <span>Kanye West</span>
+                    </li>
+                    <li>
+                        22:00 | <span>Post malone</span>
+                    </li>
+                    <li>
+                        20:00 | <span>The babe</span>
+                    </li>
+                    <li>
+                        19:00 | <span>Lil Mousey</span>
+                    </li>
+                    <li>
+                        18:00 | <span>Drake</span>
+                    </li>
+                    <li>
+                        17:00 | <span>2Pack</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p class="dia">Sabado 22</p>
+
+        <div class="escenarios-contenedor contenedor">
+
+            <div class="escenario rock bg-verde">
+                    <p class="nombre-escenario">Escenario Rock</p>
+                    
+                    <ul class="calendario">
+                        <li>
+                            24:00 | <span>Metalica</span>
+                        </li>
+                        <li>
+                            22:00 | <span>Pearl Jam</span>
+                        </li>
+                        <li>
+                            20:00 | <span>KoRn</span>
+                        </li>
+                        <li>
+                            19:00 | <span>Muse</span>
+                        </li>
+                        <li>
+                            18:00 | <span>Breaking Benjamin</span>
+                        </li>
+                        <li>
+                            17:00 | <span>30 second to Mars</span>
+                        </li>
+                    </ul>
+                </div>
+            
+
+            <div class="escenario edm bg-amarillo">
+                <p class="nombre-escenario">Escenario EDM</p>
+                
+                <ul class="calendario">
+                    <li>
+                        24:00 | <span>Metalica</span>
+                    </li>
+                    <li>
+                        22:00 | <span>Pearl Jam</span>
+                    </li>
+                    <li>
+                        20:00 | <span>KoRn</span>
+                    </li>
+                    <li>
+                        19:00 | <span>Muse</span>
+                    </li>
+                    <li>
+                        18:00 | <span>Breaking Benjamin</span>
+                    </li>
+                    <li>
+                        17:00 | <span>30 second to Mars</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="galeria contenedor">
+        <h3>Galería</h3>
+
+        <ul class="galeria-imagenes"></ul>
+    </section>
+
+    <section id="boletos" class="boletos bg-verde">
+        <h3>Boletos</h3>
+
+        <div class="contenedor contenedor-boletos">
+            <div class="basico pase">
+                <p class="nombre-pase">Pase 1 día</p>
+                <header class="pase-header">
+                    <p>Incluye</p>
+                </header>
+                <div class="pase-body">
+                    <ul>
+                        <li>Axceso a ambos escenarios</li>
+                        <li>Comida y bebida</li>
+                    </ul>
+                </div>
+                <footer class="pase-footer">
+                    <p>$100</p>
+                </footer>
+            </div>
+
+            <div class="premium pase">
+                <p class="nombre-pase">Pase 2 días</p>
+                <header class="pase-header">
+                    <p>Incluye</p>
+                </header>
+                <div class="pase-body">
+                    <ul>
+                        <li>Axceso a ambos escenarios</li>
+                        <li>Comida y bebida</li>
+                        <li>Camisa del evento</li>
+                        <li>Acceso VIP</li>
+                    </ul>
+                </div>
+                <footer class="pase-footer">
+                    <p>$180</p>
+                </footer>
+            </div>
+        </div>
+
+        
+    </section>
+
+    <footer class="site-footer">
+        <p>Rock & EDM Festival. Todos los derechos reservados</p>
+    </footer>
+
+    <script src="build/js/app.js"></script>
 </body>
 </html>
