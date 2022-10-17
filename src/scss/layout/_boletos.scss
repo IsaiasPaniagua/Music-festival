@@ -1,0 +1,62 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.boletos {
+    padding: 5rem 0;
+    h3 {
+        text-align: center;
+        color: v.$White;
+        margin-bottom: 2rem;
+    }
+
+    .contenedor-boletos {
+        @include m.tablet {
+            @include m.grid(2, 5rem);
+        }
+    }
+}
+
+.pase {
+    //el amperson toma la clase padre que seria .pase
+    .nombre-pase {
+        color: v.$White;
+        text-align: center;
+        font-size: 2.4rem;
+    }
+    &-header, &-footer {
+        p {
+            padding: .5rem;
+            margin: 0;
+            text-align: center;
+            color: v.$White;
+        }
+    }
+    &-header {
+        background-color: v.$Pink;
+        p {
+            text-transform: uppercase;
+            font-size: 1.6rem;
+        }
+    }
+
+    &-body {
+        background-color: v.$White;
+
+        ul {
+            @include m.resetear-lista;
+            li, :nth-child(odd) {
+                background-color: v.$White;
+                padding: 1rem;
+                border-bottom: 1px solid v.$Gray;
+            }
+        }
+    }
+
+    &-footer {
+        background-color: v.$Morado;
+        p {
+            font-size: 2.4rem;
+            font-weight: 700;
+        }
+    }
+}

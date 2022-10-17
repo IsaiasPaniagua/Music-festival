@@ -2,7 +2,7 @@
 html {
     font-size: 62.5%; //habilita que 1rem sea igual a 10px
     box-sizing: border-box; /* *Para hacer que el border, el padding, etc no afecte el ancho de nuestros elementos*/
-
+    scroll-behavior: smooth;
 }
 *, *:before, *:after {
     box-sizing: inherit;
@@ -10,6 +10,14 @@ html {
 body {
     font-family: v.$Principal_font;
     font-size: 1.6rem;
+
+    &.fijar-body {
+        overflow: hidden; // para no poder dar scroll una vez que se muestra la imagen
+    }
+
+    &.body-scroll {
+        padding-top: 8.6rem;
+    }
 }
 p {
     font-size: 2rem;
